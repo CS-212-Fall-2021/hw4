@@ -1,0 +1,33 @@
+\documentclass[a4page]{exam}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{amsmath, amsfonts}
+
+\title{Homework 4}
+\author{CS 212 Nature of Computation\\Habib University\\Fall 2021}
+\date{Due: 2359h on Sunday, 19 December}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent\rule{\textwidth}{1pt}
+
+\begin{questions}
+\question[20] Let $A\epsilon_\text{CFG} = \{ \langle G \rangle : G\ \text{is a CFG that generates $\epsilon$}\}$. Show that $A\epsilon_\text{CFG}$ is decidable.
+
+\question[20] Consider the class of (deterministic) Turing machines with $n$ states plus a separate halt state, a single doubly-infinite tape, and a $2$-symbol tape alphabet $\{\textvisiblespace, 1 \}$. Each transition in such machines changes the current state (possibly), changes the current symbol (possibly) and moves \textsf{left} or \textsf{right}. The ``Busy Beaver'' problem is to design such an $n$-state Turing machine that starts on an empty tape, writes as many $1$'s as possible (not necessarily adjacent), then halts.
+
+  For example, the only possible $1$-state machine would write one $1$, move \textsf{right} (or \textsf{left}), and halt. Other possible $1$-state machines fail to halt.
+  
+\question[20] Show that $\textbf{2SAT } \in  \textbf{ P}\text{, where }\textbf{2SAT}\text{ = } \{ \phi \hspace{1mm} | \hspace{1mm} \phi \text{ is a satisfiable 2cnf-formula}\}$. You must give a high level description of the algorithm, and show that it runs in polynomial time. \\ \textit{Hint}: A disjunctive clause $(x_1 \vee x_2) \text{ is logically equivalent to } \neg x_1 \implies x_2 \text{ and } \neg x_2 \implies x_1$.
+  
+\question[20] Show that $\textbf{DOM-SET} \in \textbf{NP}$, where $\textbf{DOM-SET} = \{ <G,k> \hspace{1mm} | \hspace{1mm}  G$  has a dominating set of size k$\}$.
+  
+\question[20] Show that $\overline{\textbf{TAUT}} \in \textbf{NP-COMPLETE}$, where $\overline{\textbf{TAUT}}=\{\phi \hspace{1mm} | \hspace{1mm} \phi \notin \textbf{TAUT} \}$, and $\textbf{TAUT} = \{ \phi \hspace{1mm} | \hspace{1mm} \phi \text{ is a tautological boolean formula} \}$.
+
+\end{questions}
+
+\noindent\rule{\textwidth}{1pt}
+\end{document}
+
