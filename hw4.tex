@@ -19,6 +19,8 @@
 \question[20] Consider the class of (deterministic) Turing machines with $n$ states plus a separate halt state, a single doubly-infinite tape, and a $2$-symbol tape alphabet $\{\textvisiblespace, 1 \}$. Each transition in such machines changes the current state (possibly), changes the current symbol (possibly) and moves \textsf{left} or \textsf{right}. The ``Busy Beaver'' problem is to design such an $n$-state Turing machine that starts on an empty tape, writes as many $1$'s as possible (not necessarily adjacent), then halts.
 
   For example, the only possible $1$-state machine would write one $1$, move \textsf{right} (or \textsf{left}), and halt. Other possible $1$-state machines fail to halt.
+
+  Design a 3-state machine, i.e. 3 states plus a halt state, which writes at least four 1’s and halts. More credit for more 1’s. The maximum possible is six 1’s.
   
 \question[20] Show that $\textbf{2SAT } \in  \textbf{ P}\text{, where }\textbf{2SAT}\text{ = } \{ \phi \hspace{1mm} | \hspace{1mm} \phi \text{ is a satisfiable 2cnf-formula}\}$. You must give a high level description of the algorithm, and show that it runs in polynomial time. \\ \textit{Hint}: A disjunctive clause $(x_1 \vee x_2) \text{ is logically equivalent to } \neg x_1 \implies x_2 \text{ and } \neg x_2 \implies x_1$.
   
@@ -31,3 +33,7 @@
 \noindent\rule{\textwidth}{1pt}
 \end{document}
 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
